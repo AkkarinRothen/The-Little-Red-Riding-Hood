@@ -15,10 +15,64 @@
  */
 body {
   background-color: black;
-  color: white;
+  color: black;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  /* --- CSS para Texto Adaptable --- */
+
+/* Tamaño de fuente base para pantallas grandes (escritorio) */
+tw-story {
+  font-size: 1.1em; /* O el tamaño que prefieras */
+}
+
+/* Media Query: Si la pantalla es de 768px o menos (tablets y móviles) */
+@media (max-width: 768px) {
+  tw-story {
+    font-size: 1em; /* Un poco más pequeño para que quepa mejor */
+  }
+}
+  /* --- CSS para Márgenes Adaptables --- */
+
+/* Media Query: Se aplica en pantallas de 480px de ancho o menos */
+@media (max-width: 480px) {
+  tw-passage {
+    padding-left: 5%;  /* Reduce el margen izquierdo */
+    padding-right: 5%; /* Reduce el margen derecho */
+  }
+}
+/* --- CSS para Barra Lateral Adaptable --- */
+
+/* Media Query: Se aplica en pantallas de 768px de ancho o menos */
+@media (max-width: 768px) {
+  tw-sidebar {
+    display: none; /* ¡La oculta por completo! */
+  }
+  
+  tw-story {
+    padding-left: 2em; /* Eliminamos el espacio que dejaba la sidebar */
+  }
+}
+/* Media Query: Si la pantalla es de 480px o menos (móviles) */
+@media (max-width: 480px) {
+  tw-story {
+    font-size: 0.9em; /* Ajuste fino para pantallas pequeñas */
+  }
+}
+  /* 1. Importar la fuente OpenDyslexic desde internet */
+@import url('https://fontlibrary.org/face/opendyslexic');
+}
+/* 2. Aplicar la fuente a toda la historia */
+tw-story {
+  font-family: 'OpenDyslexicRegular', sans-serif;
+}
+tw-story {
+  background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20210505/pngtree-paper-with-vintage-texture-sheet-image_701725.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: #000;
 }
 
 tw-story {
@@ -49,14 +103,14 @@ img.flotante {
  * Esto hace que las opciones del jugador sean más claras y atractivas.
  */
 a, tw-link {
-  color: #3498db; /* Un color azul llamativo para los enlaces */
+  color: #0739d7; /* Un color azul llamativo para los enlaces */
   text-decoration: none; /* Elimina el subrayado por defecto */
   border-bottom: 1px solid #3498db; /* Un sutil subrayado que aparece al pasar el cursor */
   transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
 a:hover, tw-link:hover {
-  color: #f1c40f; /* Cambia el color del texto del enlace al pasar el cursor */
+  color: #ff0000; /* Cambia el color del texto del enlace al pasar el cursor */
   border-bottom: 1px solid #f1c40f; /* Cambia el color del subrayado */
 }
 
@@ -72,6 +126,15 @@ tw-passage[tags="dark"] {
 tw-passage[tags="light"] {
   background: #eee;
   color: #333;
+}
+tw-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  max-height: 100%;
+  margin-top: 5%;
+  padding: 1em;
 }
 /**
  * Harlowe Audio Library (HAL), by Chapel, v2.3.0
@@ -103,11 +166,13 @@ document.addEventListener('click', function onFirstClick() {
   window.bgmPlay();
   document.removeEventListener('click', onFirstClick);
 }, { once: true });
-</script><tw-tag name="Audio" color="orange"></tw-tag><tw-tag name="footer" color="orange"></tw-tag><tw-passagedata pid="1" name="Intro" tags="" position="250,250" size="100,100">(set: $haStick to false)
+</script><tw-tag name="Audio" color="orange"></tw-tag><tw-tag name="footer" color="orange"></tw-tag><tw-tag name="startup" color="orange"></tw-tag><tw-passagedata pid="1" name="Intro" tags="" position="250,250" size="100,100">
+(set: $haStick to false)
 &lt;img src=&quot;https://i.ibb.co/7dZpZkc0/1.png&quot; width=&quot;300&quot; height=&quot;400&quot; alt=&quot;Descripción&quot; class=&quot;flotante&quot;/&gt;
 Little Red Riding Hood is on her way to her grandmother&#39;s house. Her mother has warned her to stay on the path and not talk to strangers.   As she walks through the woods, she comes to a fork in the path. What should she do?
 [[Stay on the main path, which is long and safe]]
 [[Take the dark path.|Go down the small, dark path, which is shorter]]
+
 </tw-passagedata><tw-passagedata pid="2" name="Stay on the main path, which is long and safe" tags="" position="275,375" size="100,100">&lt;img src=&quot;https://i.ibb.co/6pdx313/59195193-4923-4ea4-bce4-f41105a2a16b.png&quot; width=&quot;300&quot; height=&quot;400&quot; alt=&quot;Descripción&quot; class=&quot;flotante&quot;/&gt;
 Little Red Riding Hood chose the main path. It was a beautiful day, and she felt happy. Suddenly, a big wolf came out from behind a tree.
 
@@ -207,7 +272,10 @@ Grandma moves a little bit the sheet showing her eyes.
 showControls: true
 sidebarStartClosed: true
 muteOnBlur: true
-</tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="28" name="Untitled Passage" tags="" position="400,700" size="100,100"></tw-passagedata><tw-passagedata pid="29" name="Barra Lateral" tags="footer" position="275,1075" size="100,100">(append: ?Sidebar)[
+  &#39;&#39;&#39;Menú&#39;&#39;&#39;
+  [[Intro]]
+  ]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
