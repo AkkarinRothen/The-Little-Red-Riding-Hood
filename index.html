@@ -47,17 +47,31 @@ tw-story {
 /* Media Query: Se aplica en pantallas de 768px de ancho o menos */
 @media (max-width: 768px) {
   tw-sidebar {
-    display: none; /* ¡La oculta por completo! */
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 0;
+    padding: 0.5em;
+    background: rgba(0,0,0,0.8);
+    justify-content: space-around;
+    z-index: 1000;
   }
-  
+
   tw-story {
-    padding-left: 2em; /* Eliminamos el espacio que dejaba la sidebar */
+    padding-left: 0;
+    padding-bottom: 4em; /* espacio para la barra inferior */
   }
 }
 /* Media Query: Si la pantalla es de 480px o menos (móviles) */
 @media (max-width: 480px) {
   tw-story {
     font-size: 0.9em; /* Ajuste fino para pantallas pequeñas */
+  }
+
+  tw-sidebar {
+    padding: 0.25em;
   }
 }
   /* 1. Importar la fuente OpenDyslexic desde internet */
@@ -293,6 +307,9 @@ sidebarStartClosed: true
 muteOnBlur: true
 </tw-passagedata><tw-passagedata pid="28" name="Barra Lateral" tags="footer" position="275,1075" size="100,100">(append: ?Sidebar)[
   &#39;&#39;&#39;Menú&#39;&#39;&#39;
+  (link: "Reiniciar")[(restart:)]
+  (link: "Guardar partida")[(save-game: "slot1")]
+  (link: "Cargar partida")[(load-game: "slot1")]
   [[Beginning|startup]]
   ]</tw-passagedata><tw-passagedata pid="29" name="Stone" tags="" position="650,475" size="100,100">(set: $hasrock to true)
 You see a little rock on the ground. You decide to pick it up, thinking it might be useful.
