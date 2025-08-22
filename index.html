@@ -205,7 +205,9 @@ What should Little Red Riding Hood do?
 [[She stays on the path and keeps walking to her grandmother&#39;s house.|Arrive at Grandmother&#39;s House.]] </tw-passagedata><tw-passagedata pid="4" name="Continue on the path to her grandmother&#39;s house." tags="" position="375,500" size="100,100">[[Arrive at Grandmother&#39;s House.]]</tw-passagedata><tw-passagedata pid="5" name="Arrive at Grandmother&#39;s House." tags="" position="275,625" size="100,100">&lt;img src=&quot;images/7.png&quot; width=&quot;300&quot; height=&quot;400&quot; alt=&quot;Descripción&quot; class=&quot;flotante&quot;/&gt;
 Little Red Riding Hood finally arrived at her grandmother&#39;s house. The door was open. &quot;Grandmother?&quot; she called. There was no answer. She went inside and saw her grandmother in bed, wearing a nightcap.
 
-[[Close the door]]</tw-passagedata><tw-passagedata pid="6" name="Pick up the stick." tags="" position="525,475" size="100,100">(set: $hasstick to true)
+[[Close the door]]
+
+(track: &#39;arrivedhouse&#39;,&#39;playwhenpossible&#39;, &#39;fadeout&#39;, 5)</tw-passagedata><tw-passagedata pid="6" name="Pick up the stick." tags="" position="525,475" size="100,100">(set: $hasstick to true)
 The Little Red Riding Hood found a stick on the ground. She decided to pick it up, thinking it might be useful.
 &lt;img src=&quot;images/stick.png&quot; width=&quot;300&quot; height=&quot;400&quot; class=&quot;flotante&quot;&gt;
 [[She goes to pick the flowers for her grandmother.]] 
@@ -236,7 +238,8 @@ The trail was more difficult than she thought, filled with thorns and muddy pudd
 &lt;img src=&quot;images/mud.jpg&quot; width=&quot;300&quot; height=&quot;400&quot; class=&quot;flotante&quot;&gt;
 [[Arrive at Grandmother&#39;s House.]] 
 
-(track: &#39;walking mud&#39;,&#39;playwhenpossible&#39;, &#39;fadeout&#39;, 5)</tw-passagedata><tw-passagedata pid="12" name="She tells the wolf &quot;I&#39;m going to find my grandmother on the path I know." tags="" position="525,875" size="100,100">[[Arrive at Grandmother&#39;s House.]] </tw-passagedata><tw-passagedata pid="13" name="Close the door" tags="" position="150,750" size="100,100">
+(track: &#39;walking mud&#39;,&#39;playwhenpossible&#39;, &#39;fadeout&#39;, 5)
+(track: &#39;walking mud speaker&#39;,&#39;playwhenpossible&#39;, &#39;fadeout&#39;, 5)</tw-passagedata><tw-passagedata pid="12" name="She tells the wolf &quot;I&#39;m going to find my grandmother on the path I know." tags="" position="525,875" size="100,100">[[Arrive at Grandmother&#39;s House.]] </tw-passagedata><tw-passagedata pid="13" name="Close the door" tags="" position="150,750" size="100,100">
 &quot;Hello, Grandmother. I brought you some food,&quot; she said.
 
 The figure in the bed looked strange. Its nose was long and its ears were big. The figure said in a strange, deep voice, &quot;Come closer, my dear, so I can see you.&quot;
@@ -319,6 +322,7 @@ Grandma moves a little bit the sheet showing her eyes.
 title:&quot;audio/Title.mp3&quot;
 intro:&quot;audio/Intro.mp3&quot;
 walking mud: &quot;audio/walking through mud.mp3&quot;
+walking mud speaker: &quot;audio/walking mud.mp3&quot;
 crows: &quot;audio/crows.mp3&quot;
 beautiful flowers:&quot;audio/beautiful flowers.mp3&quot;
 darkpath:&quot;audio/Dark Path.mp3&quot;
@@ -326,7 +330,7 @@ mainpath:&quot;audio/Main Path.mp3&quot;
 stickground:&quot;audio/Stick Ground.mp3&quot;
 rockground:&quot;audio/Rock Ground.mp3&quot;
 knowafasterway:&quot;audio/Know a faster way.mp3&quot;
-comecloser:&quot;audio/Come Closer.mp3&quot;
+comecloser:&quot;audio/Come closer.mp3&quot;
 closedoor:&quot;audio/close door.mp3&quot;
 bigears:&quot;audio/Big Ears.mp3&quot;
 tohearyouwith:&quot;audio/To hear you with.mp3&quot;
@@ -337,7 +341,8 @@ swanstick:&quot;audio/swang the stick.mp3&quot;
 runintotheforest:&quot;audio/run into the forest.mp3&quot;
 kickthedoor:&quot;audio/kick the door.mp3&quot;
 theend:&quot;audio/The end.mp3&quot;
-whenheenters:&quot;audio/when he enters.mp3&quot;</tw-passagedata><tw-passagedata pid="27" name="hal.config" tags="" position="600,100" size="100,100">startingVol: 0.5
+whenheenters:&quot;audio/when he enters.mp3&quot;
+arrivedhouse:&quot;audio/Arrived house.mp3&quot;</tw-passagedata><tw-passagedata pid="27" name="hal.config" tags="" position="600,100" size="100,100">startingVol: 0.5
 showControls: true
 sidebarStartClosed: true
 muteOnBlur: true
