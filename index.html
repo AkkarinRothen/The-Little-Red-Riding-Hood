@@ -207,7 +207,7 @@ What should Little Red Riding Hood do?
 
 [[She goes to pick the flowers for her grandmother.]]
 [[Pick up the stick.]] 
-[[Pick up the stone.|Stone]] 
+
 [[She stays on the path and keeps walking to her grandmother&#39;s house.|Arrive at Grandmother&#39;s House.]] </tw-passagedata><tw-passagedata pid="4" name="Continue on the path to her grandmother&#39;s house." tags="" position="375,500" size="100,100">[[Arrive at Grandmother&#39;s House.]]</tw-passagedata><tw-passagedata pid="5" name="Arrive at Grandmother&#39;s House." tags="" position="275,625" size="100,100">&lt;img src=&quot;images/7.png&quot; width=&quot;300&quot; height=&quot;400&quot; alt=&quot;Descripción&quot; class=&quot;flotante&quot;/&gt;
 Little Red Riding Hood finally arrived at her grandmother&#39;s house. The door was open. &quot;Grandmother?&quot; she called. There was no answer. She went inside and saw her grandmother in bed, wearing a nightcap.
 
@@ -232,11 +232,11 @@ What should Little Red Riding Hood do?
 [[She follows the wolf&#39;s directions and takes the new path.]]
 [[She says &quot;No, thank you&quot; and stays on the main road.]]
 (track: &#39;knowafasterway&#39;, &#39;playwhenpossible&#39;, &#39;fadeout&#39;, 3)
-(track: &#39;mainpath&#39;, &#39;stop&#39;)</tw-passagedata><tw-passagedata pid="8" name="She goes to pick the flowers for her grandmother." tags="" position="525,625" size="100,100">&lt;img src=&quot;images/3.png&quot; width=&quot;300&quot; height=&quot;400&quot; class=&quot;flotante&quot;&gt;
+(track: &#39;mainpath&#39;, &#39;stop&#39;)</tw-passagedata><tw-passagedata pid="8" name="She goes to pick the flowers for her grandmother." tags="" position="625,625" size="100,100">&lt;img src=&quot;images/3.png&quot; width=&quot;300&quot; height=&quot;400&quot; class=&quot;flotante&quot;&gt;
 After Little Red Riding Hood stopped for the flowers, she met the wolf. &quot;What beautiful flowers!&quot; he said. &quot;Are you going to your grandmother&#39;s house? I know a shortcut.&quot; The wolf pointed to a different path.
 
 What should Little Red Riding Hood do?
-
+[[Pick up a stone|Stone]]
 [[She follows the wolf&#39;s directions and takes the new path.]]
 [[She tells the wolf &quot;I&#39;m going to find my grandmother on the path I know.|Arrive at Grandmother&#39;s House.]]
 
@@ -247,7 +247,7 @@ What should Little Red Riding Hood do?
 [[Pick up the stick.]] 
 [[Arrive at Grandmother&#39;s House.]] 
 (track: &#39;stickground&#39;, &#39;playwhenpossible&#39;, &#39;fadeout&#39;, 3)
-(track: &#39;knowafasterway&#39;, &#39;stop&#39;)</tw-passagedata><tw-passagedata pid="11" name="She follows the wolf&#39;s directions and takes the new path." tags="" position="650,750" size="100,100">
+(track: &#39;knowafasterway&#39;, &#39;stop&#39;)</tw-passagedata><tw-passagedata pid="11" name="She follows the wolf&#39;s directions and takes the new path." tags="" position="675,800" size="100,100">
 The trail was more difficult than she thought, filled with thorns and muddy puddles. It takes her a little longer to reach her destination.
 &lt;img src=&quot;images/mud.jpg&quot; width=&quot;300&quot; height=&quot;400&quot; class=&quot;flotante&quot;&gt;
 [[Arrive at Grandmother&#39;s House.]] 
@@ -379,14 +379,15 @@ muteOnBlur: true
 &#39;&#39;&#39;Menú&#39;&#39;&#39;
 
 [[Restart|startup]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="29" name="Stone" tags="" position="650,475" size="100,100">(set: $hasrock to true)
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="29" name="Stone" tags="" position="775,550" size="100,100">(set: $hasrock to true)
 She saw a little rock on the ground and decided to pick it up, thinking it might be useful.
 &lt;img src=&quot;images/small stone.png&quot; width=&quot;300&quot; height=&quot;400&quot; class=&quot;flotante&quot;&gt;
-[[She goes to pick the flowers for her grandmother.]] 
+
 [[Arrive at Grandmother&#39;s House.]] 
 
 (track: &#39;rockground&#39;, &#39;playwhenpossible&#39;, &#39;fadeout&#39;, 3)
-(track: &#39;darkpath&#39;, &#39;stop&#39;)</tw-passagedata><tw-passagedata pid="30" name="Throw the stone to the wolf" tags="" position="125,1250" size="100,100">The Little Red Riding Hood remembered the stone she picked up in the forest. 
+(track: &#39;darkpath&#39;, &#39;stop&#39;)
+(track: &#39;beautiful flowers&#39;, &#39;stop&#39;)</tw-passagedata><tw-passagedata pid="30" name="Throw the stone to the wolf" tags="" position="125,1250" size="100,100">The Little Red Riding Hood remembered the stone she picked up in the forest. 
 She grabbed the stone and threw it to the wolf with all her strenght.
 
 &lt;img src=&quot;images/Throwing the rock to the wolf.png&quot; width=&quot;300&quot; height=&quot;400&quot; alt=&quot;Descripción&quot; class=&quot;flotante&quot;/&gt;
