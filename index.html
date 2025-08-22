@@ -8,6 +8,7 @@
 </style>
 </head>
 <body>
+<div id="inventory"></div>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play The Little Red Riding Hood.</tw-noscript></noscript></tw-story>
 <tw-storydata name="The Little Red Riding Hood" startnode="25" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="B7C4C00A-8880-4A5D-B1B1-0F58F91A3C02" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/*
  * Sección 1: Estilos Generales del Cuerpo de la Historia
@@ -177,7 +178,7 @@ Little Red Riding Hood is on her way to her grandmother&#39;s house. Her mother 
 [[Stay on the main path, which is long and safe]]
 [[Take the dark path.|Go down the small, dark path, which is shorter]]
 
-</tw-passagedata><tw-passagedata pid="2" name="Stay on the main path, which is long and safe" tags="" position="275,375" size="100,100">&lt;img src=&quot;images/2.png&quot; width=&quot;300&quot; height=&quot;400&quot; alt=&quot;Descripción&quot; class=&quot;flotante&quot;/&gt;
+(display: "inventory")</tw-passagedata><tw-passagedata pid="2" name="Stay on the main path, which is long and safe" tags="" position="275,375" size="100,100">&lt;img src=&quot;images/2.png&quot; width=&quot;300&quot; height=&quot;400&quot; alt=&quot;Descripción&quot; class=&quot;flotante&quot;/&gt;
 Little Red Riding Hood chose the main path. It was a beautiful day, and she felt happy. Suddenly, a big wolf came out from behind a tree.
 
 &quot;Hello, little girl,&quot; the wolf said with a friendly smile. &quot;Where are you going?&quot;
@@ -186,7 +187,7 @@ Little Red Riding Hood remembered her mother&#39;s words. She was not supposed t
 
 What should Little Red Riding Hood do now?
 [[She talks to the wolf and tells him where she is going]]
-[[She ignores the wolf and continues walking fast.|Arrive at Grandmother&#39;s House.]]</tw-passagedata><tw-passagedata pid="3" name="Go down the small, dark path, which is shorter" tags="" position="400,375" size="100,100">&lt;img src=&quot;images/Dark Path.jpg&quot; width=&quot;300&quot; height=&quot;400&quot; alt=&quot;Descripción&quot; class=&quot;flotante&quot;/&gt;
+[[She ignores the wolf and continues walking fast.|Arrive at Grandmother&#39;s House.]](display: "inventory")</tw-passagedata><tw-passagedata pid="3" name="Go down the small, dark path, which is shorter" tags="" position="400,375" size="100,100">&lt;img src=&quot;images/Dark Path.jpg&quot; width=&quot;300&quot; height=&quot;400&quot; alt=&quot;Descripción&quot; class=&quot;flotante&quot;/&gt;
 Little Red Riding Hood thought the shorter path would be more exciting. She walked deeper into the forest. The trees were big and the sun could not reach the ground. She was starting to feel a little scared.
 
 Suddenly, she saw some beautiful flowers growing far from the path.
@@ -198,34 +199,34 @@ What should Little Red Riding Hood do?
 [[She goes to pick the flowers for her grandmother.]]
 [[Pick up the stick.]] 
 [[Pick up the stone.|Stone]] 
-[[She stays on the path and keeps walking to her grandmother&#39;s house.|Arrive at Grandmother&#39;s House.]] </tw-passagedata><tw-passagedata pid="4" name="Continue on the path to her grandmother&#39;s house." tags="" position="375,500" size="100,100">[[Arrive at Grandmother&#39;s House.]]</tw-passagedata><tw-passagedata pid="5" name="Arrive at Grandmother&#39;s House." tags="" position="275,625" size="100,100">&lt;img src=&quot;images/7.png&quot; width=&quot;300&quot; height=&quot;400&quot; alt=&quot;Descripción&quot; class=&quot;flotante&quot;/&gt;
+[[She stays on the path and keeps walking to her grandmother&#39;s house.|Arrive at Grandmother&#39;s House.]] (display: "inventory")</tw-passagedata><tw-passagedata pid="4" name="Continue on the path to her grandmother&#39;s house." tags="" position="375,500" size="100,100">[[Arrive at Grandmother&#39;s House.]](display: "inventory")</tw-passagedata><tw-passagedata pid="5" name="Arrive at Grandmother&#39;s House." tags="" position="275,625" size="100,100">&lt;img src=&quot;images/7.png&quot; width=&quot;300&quot; height=&quot;400&quot; alt=&quot;Descripción&quot; class=&quot;flotante&quot;/&gt;
 Little Red Riding Hood finally arrived at her grandmother&#39;s house. The door was open. &quot;Grandmother?&quot; she called. There was no answer. She went inside and saw her grandmother in bed, wearing a nightcap.
 
-[[Close the door]]</tw-passagedata><tw-passagedata pid="6" name="Pick up the stick." tags="" position="525,475" size="100,100">(set: $hasstick to true)
+[[Close the door]](display: "inventory")</tw-passagedata><tw-passagedata pid="6" name="Pick up the stick." tags="" position="525,475" size="100,100">(set: $hasstick to true)
 The Little Red Riding Hood found a stick on the ground. She decided to pick it up, thinking it might be useful.
 &lt;img src=&quot;images/stick.png&quot; width=&quot;300&quot; height=&quot;400&quot; class=&quot;flotante&quot;&gt;
 [[She goes to pick the flowers for her grandmother.]] 
 
 
-</tw-passagedata><tw-passagedata pid="7" name="She talks to the wolf and tells him where she is going" tags="" position="150,500" size="100,100">&lt;img src=&quot;images/5.png&quot; width=&quot;300&quot; height=&quot;400&quot; alt=&quot;Descripción&quot; class=&quot;flotante&quot;/&gt;
+(display: "inventory")</tw-passagedata><tw-passagedata pid="7" name="She talks to the wolf and tells him where she is going" tags="" position="150,500" size="100,100">&lt;img src=&quot;images/5.png&quot; width=&quot;300&quot; height=&quot;400&quot; alt=&quot;Descripción&quot; class=&quot;flotante&quot;/&gt;
 The wolf told Little Red Riding Hood, &quot;I know a faster way to your grandmother&#39;s house.&quot; He pointed to a small, hidden trail. &quot;Follow this path, and I will meet you there. It&#39;s a special shortcut.&quot;
 
 What should Little Red Riding Hood do?
 
 [[She follows the wolf&#39;s directions and takes the new path.]]
-[[She says &quot;No, thank you&quot; and stays on the main road.]]</tw-passagedata><tw-passagedata pid="8" name="She goes to pick the flowers for her grandmother." tags="" position="525,625" size="100,100">&lt;img src=&quot;images/3.png&quot; width=&quot;300&quot; height=&quot;400&quot; class=&quot;flotante&quot;&gt;
+[[She says &quot;No, thank you&quot; and stays on the main road.]](display: "inventory")</tw-passagedata><tw-passagedata pid="8" name="She goes to pick the flowers for her grandmother." tags="" position="525,625" size="100,100">&lt;img src=&quot;images/3.png&quot; width=&quot;300&quot; height=&quot;400&quot; class=&quot;flotante&quot;&gt;
 After Little Red Riding Hood stopped for the flowers, she met the wolf. &quot;What beautiful flowers!&quot; he said. &quot;Are you going to your grandmother&#39;s house? I know a shortcut.&quot; The wolf pointed to a different path.
 
 What should Little Red Riding Hood do?
 
 [[She follows the wolf&#39;s directions and takes the new path.]]
-[[She tells the wolf &quot;I&#39;m going to find my grandmother on the path I know.|Arrive at Grandmother&#39;s House.]]</tw-passagedata><tw-passagedata pid="9" name="She stays on the path and keeps walking to her grandmother&#39;s house." tags="" position="525,750" size="100,100">[[Arrive at Grandmother&#39;s House.]] </tw-passagedata><tw-passagedata pid="10" name="She says &quot;No, thank you&quot; and stays on the main road." tags="" position="25,625" size="100,100">She then found a stick  on the ground. It may break easily, but it might be useful in the future.
+[[She tells the wolf &quot;I&#39;m going to find my grandmother on the path I know.|Arrive at Grandmother&#39;s House.]](display: "inventory")</tw-passagedata><tw-passagedata pid="9" name="She stays on the path and keeps walking to her grandmother&#39;s house." tags="" position="525,750" size="100,100">[[Arrive at Grandmother&#39;s House.]] (display: "inventory")</tw-passagedata><tw-passagedata pid="10" name="She says &quot;No, thank you&quot; and stays on the main road." tags="" position="25,625" size="100,100">She then found a stick  on the ground. It may break easily, but it might be useful in the future.
 &lt;img src=&quot;images/stick (1).png&quot; width=&quot;300&quot; height=&quot;400&quot; alt=&quot;Descripción&quot; class=&quot;flotante&quot;/&gt;
 
 [[Pick up the stick.]] 
-[[Arrive at Grandmother&#39;s House.]] </tw-passagedata><tw-passagedata pid="11" name="She follows the wolf&#39;s directions and takes the new path." tags="" position="650,750" size="100,100">The trail was more difficult than she thought, filled with thorns and muddy puddles. It takes her a little longer to reach her destination.
+[[Arrive at Grandmother&#39;s House.]] (display: "inventory")</tw-passagedata><tw-passagedata pid="11" name="She follows the wolf&#39;s directions and takes the new path." tags="" position="650,750" size="100,100">The trail was more difficult than she thought, filled with thorns and muddy puddles. It takes her a little longer to reach her destination.
 &lt;img src=&quot;images/mud.jpg&quot; width=&quot;300&quot; height=&quot;400&quot; class=&quot;flotante&quot;&gt;
-[[Arrive at Grandmother&#39;s House.]] </tw-passagedata><tw-passagedata pid="12" name="She tells the wolf &quot;I&#39;m going to find my grandmother on the path I know." tags="" position="525,875" size="100,100">[[Arrive at Grandmother&#39;s House.]] </tw-passagedata><tw-passagedata pid="13" name="Close the door" tags="" position="150,750" size="100,100">
+[[Arrive at Grandmother&#39;s House.]] (display: "inventory")</tw-passagedata><tw-passagedata pid="12" name="She tells the wolf &quot;I&#39;m going to find my grandmother on the path I know." tags="" position="525,875" size="100,100">[[Arrive at Grandmother&#39;s House.]] (display: "inventory")</tw-passagedata><tw-passagedata pid="13" name="Close the door" tags="" position="150,750" size="100,100">
 &quot;Hello, Grandmother. I brought you some food,&quot; she said.
 
 The figure in the bed looked strange. Its nose was long and its ears were big. The figure said in a strange, deep voice, &quot;Come closer, my dear, so I can see you.&quot;
@@ -235,19 +236,19 @@ Little Red Riding Hood walked closer to the bed.
 [[Little Red Riding Hood gives the basket to the figure.]]
 [[Little Red Riding Hood asks &quot;Grandmother, why are your ears so big?&quot;]]
 
-What should Little Red Riding Hood do?</tw-passagedata><tw-passagedata pid="14" name="Little Red Riding Hood gives the basket to the figure." tags="" position="150,875" size="100,100">Little Red Riding Hood was afraid. She asked, &quot;Grandmother, what big ears you have!&quot;
+What should Little Red Riding Hood do?(display: "inventory")</tw-passagedata><tw-passagedata pid="14" name="Little Red Riding Hood gives the basket to the figure." tags="" position="150,875" size="100,100">Little Red Riding Hood was afraid. She asked, &quot;Grandmother, what big ears you have!&quot;
 &lt;img src=&quot;images/ears.png&quot; width=&quot;300&quot; height=&quot;400&quot; alt=&quot;Descripción&quot; class=&quot;flotante&quot;/&gt;
 &quot;All the better to hear you with, my dear,&quot; said the deep voice.
 
-[[Continue|Grandmother, what big eyes you have!]] </tw-passagedata><tw-passagedata pid="15" name="Little Red Riding Hood asks &quot;Grandmother, why are your ears so big?&quot;" tags="" position="275,875" size="100,100">&quot;All the better to hear you with, my dear,&quot; said the deep voice.
+[[Continue|Grandmother, what big eyes you have!]] (display: "inventory")</tw-passagedata><tw-passagedata pid="15" name="Little Red Riding Hood asks &quot;Grandmother, why are your ears so big?&quot;" tags="" position="275,875" size="100,100">&quot;All the better to hear you with, my dear,&quot; said the deep voice.
 
 Grandma moves a little bit the sheet showing her eyes.
 &lt;img src=&quot;images/eyes.png&quot; width=&quot;300&quot; height=&quot;400&quot; alt=&quot;Descripción&quot; class=&quot;flotante&quot;/&gt;
 [[Do not say anything.|Grandmother, what big eyes you have!]]
-[[Grandmother, what big eyes you have!]]</tw-passagedata><tw-passagedata pid="16" name="Grandmother, what big eyes you have!" tags="" position="400,1000" size="100,100">All the better to see you with, my dear.
+[[Grandmother, what big eyes you have!]](display: "inventory")</tw-passagedata><tw-passagedata pid="16" name="Grandmother, what big eyes you have!" tags="" position="400,1000" size="100,100">All the better to see you with, my dear.
 &lt;img src=&quot;images/eyes.png&quot; width=&quot;300&quot; height=&quot;400&quot; alt=&quot;Descripción&quot; class=&quot;flotante&quot;/&gt;
 [[Grandmother, what big teeth you have!]]
-[[Do not say anything.]]</tw-passagedata><tw-passagedata pid="17" name="Grandmother, what big teeth you have!" tags="" position="400,1125" size="100,100">&quot;All the better to EAT you with!&quot; the wolf roared. He jumped out of the bed, a big, hungry smile on his face. Little Red Riding Hood screamed and ran out of the house.
+[[Do not say anything.]](display: "inventory")</tw-passagedata><tw-passagedata pid="17" name="Grandmother, what big teeth you have!" tags="" position="400,1125" size="100,100">&quot;All the better to EAT you with!&quot; the wolf roared. He jumped out of the bed, a big, hungry smile on his face. Little Red Riding Hood screamed and ran out of the house.
 &lt;img src=&quot;images/ChatGPT Image 15 ago 2025, 08_28_16 p.m..png&quot; width=&quot;300&quot; height=&quot;400&quot; alt=&quot;Descripción&quot; class=&quot;flotante&quot;/&gt;
 (if: $hasstick)[
   [[Swing the stick at the wolf]]
@@ -257,24 +258,24 @@ Grandma moves a little bit the sheet showing her eyes.
   No tienes nada con qué defenderte.
   [[Scream]]
   [[Ask for help]]
-]</tw-passagedata><tw-passagedata pid="18" name="Do not say anything." tags="" position="525,1125" size="100,100">[[Grandmother, what big teeth you have!]] </tw-passagedata><tw-passagedata pid="19" name="Ask for help" tags="" position="525,1250" size="100,100">Just then, a woodchopper was walking by the house. He heard Little Red Riding Hood&#39;s asking for help and ran inside. The woodchopper saw the big, bad wolf. He quickly pulled out his axe and chased the wolf away. The wolf ran into the forest and was never seen again.
+](display: "inventory")</tw-passagedata><tw-passagedata pid="18" name="Do not say anything." tags="" position="525,1125" size="100,100">[[Grandmother, what big teeth you have!]] (display: "inventory")</tw-passagedata><tw-passagedata pid="19" name="Ask for help" tags="" position="525,1250" size="100,100">Just then, a woodchopper was walking by the house. He heard Little Red Riding Hood&#39;s asking for help and ran inside. The woodchopper saw the big, bad wolf. He quickly pulled out his axe and chased the wolf away. The wolf ran into the forest and was never seen again.
 &lt;img src=&quot;images/woodchopper (1).png&quot; width=&quot;300&quot; height=&quot;400&quot; alt=&quot;Descripción&quot; class=&quot;flotante&quot;/&gt;
-[[Where is grandma??]] </tw-passagedata><tw-passagedata pid="20" name="Scream" tags="" position="400,1250" size="100,100">Just then, a woodchopper was walking by the house. He heard Little Red Riding Hood&#39;s screams and ran inside. The woodchopper saw the big, bad wolf. He quickly pulled out his axe and chased the wolf away. The wolf ran into the forest and was never seen again.
+[[Where is grandma??]] (display: "inventory")</tw-passagedata><tw-passagedata pid="20" name="Scream" tags="" position="400,1250" size="100,100">Just then, a woodchopper was walking by the house. He heard Little Red Riding Hood&#39;s screams and ran inside. The woodchopper saw the big, bad wolf. He quickly pulled out his axe and chased the wolf away. The wolf ran into the forest and was never seen again.
 &lt;img src=&quot;images/woodchopper (1).png&quot; width=&quot;300&quot; height=&quot;400&quot; alt=&quot;Descripción&quot; class=&quot;flotante&quot;/&gt;
-[[Where is grandma??]]</tw-passagedata><tw-passagedata pid="21" name="Where is grandma??" tags="" position="400,1375" size="100,100">The woodchopper then looked in the closet and found Little Red Riding Hood&#39;s grandmother. She was not eaten! She had hidden in the closet when she saw the wolf. Everyone was safe, and Little Red Riding Hood promised to always listen to her mother and never, ever talk to strangers again.
+[[Where is grandma??]](display: "inventory")</tw-passagedata><tw-passagedata pid="21" name="Where is grandma??" tags="" position="400,1375" size="100,100">The woodchopper then looked in the closet and found Little Red Riding Hood&#39;s grandmother. She was not eaten! She had hidden in the closet when she saw the wolf. Everyone was safe, and Little Red Riding Hood promised to always listen to her mother and never, ever talk to strangers again.
 &lt;img src=&quot;images/the end.png&quot; width=&quot;300&quot; height=&quot;400&quot; alt=&quot;Descripción&quot; class=&quot;flotante&quot;/&gt;
 
-&lt;img src=&quot;images/ChatGPT Image 20 ago 2025, 01_46_56 p.m..png&quot; class=&quot;imagen-centrada&quot; width=&quot;300&quot;&gt;</tw-passagedata><tw-passagedata pid="22" name="Swing the stick at the wolf" tags="" position="275,1250" size="100,100">She swang the stick with all her strength and hit the wolf&#39;s nose! He yelped in surprise and stumbled back for a second hitting against the windows of the house.
+&lt;img src=&quot;images/ChatGPT Image 20 ago 2025, 01_46_56 p.m..png&quot; class=&quot;imagen-centrada&quot; width=&quot;300&quot;&gt;(display: "inventory")</tw-passagedata><tw-passagedata pid="22" name="Swing the stick at the wolf" tags="" position="275,1250" size="100,100">She swang the stick with all her strength and hit the wolf&#39;s nose! He yelped in surprise and stumbled back for a second hitting against the windows of the house.
 &lt;img src=&quot;images/865c5e1c-ff81-4ce3-8878-a88dea464261.png&quot; width=&quot;300&quot; height=&quot;400&quot; alt=&quot;Descripción&quot; class=&quot;flotante&quot;/&gt;
-[[Continue|The woodchopper arrives]]</tw-passagedata><tw-passagedata pid="23" name="The woodchopper arrives" tags="" position="275,1375" size="100,100">Just then, a woodchopper was walking by the house. He heard a noise comming from the old granma&#39;s house. Then, the woodchopper saw the big, bad wolf hitting against one of the windows. He opened the front door with a kick.
+[[Continue|The woodchopper arrives]](display: "inventory")</tw-passagedata><tw-passagedata pid="23" name="The woodchopper arrives" tags="" position="275,1375" size="100,100">Just then, a woodchopper was walking by the house. He heard a noise comming from the old granma&#39;s house. Then, the woodchopper saw the big, bad wolf hitting against one of the windows. He opened the front door with a kick.
 
 &lt;img src=&quot;images/woodchopper (1).png&quot; width=&quot;300&quot; height=&quot;400&quot; alt=&quot;Descripción&quot; class=&quot;flotante&quot;/&gt;
 
 [[Continue|Chasing the wolf away]]
-</tw-passagedata><tw-passagedata pid="24" name="Chasing the wolf away" tags="" position="275,1500" size="100,100">When he enters, the big bad wolf was jumpin over the the little red riding hood. He quickly pulled out his axe and chased the wolf away. The wolf ran into the forest and was never seen again.
+(display: "inventory")</tw-passagedata><tw-passagedata pid="24" name="Chasing the wolf away" tags="" position="275,1500" size="100,100">When he enters, the big bad wolf was jumpin over the the little red riding hood. He quickly pulled out his axe and chased the wolf away. The wolf ran into the forest and was never seen again.
 &lt;img src=&quot;images/chasing the wolf away.png&quot; width=&quot;300&quot; height=&quot;400&quot; alt=&quot;Descripción&quot; class=&quot;flotante&quot;/&gt;
 
-[[Where is grandma??]] </tw-passagedata><tw-passagedata pid="25" name="startup" tags="" position="100,175" size="100,100">&lt;img src=&quot;https://www.science.org/do/10.1126/article.23922/full/sn-redridinghood-1644923258497.jpg&quot; width=&quot;300&quot; height=&quot;400&quot; alt=&quot;Descripción&quot; class=&quot;flotante&quot;/&gt;
+[[Where is grandma??]] (display: "inventory")</tw-passagedata><tw-passagedata pid="25" name="startup" tags="" position="100,175" size="100,100">&lt;img src=&quot;https://www.science.org/do/10.1126/article.23922/full/sn-redridinghood-1644923258497.jpg&quot; width=&quot;300&quot; height=&quot;400&quot; alt=&quot;Descripción&quot; class=&quot;flotante&quot;/&gt;
 (link: &quot;Beginning&quot;)[
   (track: &#39;theme&#39;, &#39;loop&#39;, true)
   (track: &#39;theme&#39;, &#39;play&#39;)
@@ -295,12 +296,12 @@ You see a little rock on the ground. You decide to pick it up, thinking it might
 [[She goes to pick the flowers for her grandmother.]] 
 [[Arrive at Grandmother&#39;s House.]] 
 
-</tw-passagedata><tw-passagedata pid="30" name="Throw the stone to the wolf" tags="" position="125,1250" size="100,100">The Little Red Riding Hood remembered the stone she picked up in the forest. 
+(display: "inventory")</tw-passagedata><tw-passagedata pid="30" name="Throw the stone to the wolf" tags="" position="125,1250" size="100,100">The Little Red Riding Hood remembered the stone she picked up in the forest. 
 She grabbed the stone and threw it to the wolf with all her strenght.
 
 &lt;img src=&quot;images/Throwing the rock to the wolf.png&quot; width=&quot;300&quot; height=&quot;400&quot; alt=&quot;Descripción&quot; class=&quot;flotante&quot;/&gt;
 
-[[Continue|The woodchopper arrives]]</tw-passagedata></tw-storydata>
+[[Continue|The woodchopper arrives]](display: "inventory")</tw-passagedata><tw-passagedata pid="31" name="inventory" tags="startup" position="0,0" size="100,100">(replace: ?inventory)[(if: $hasstick)[🏒 Palo]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
