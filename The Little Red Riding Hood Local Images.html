@@ -171,7 +171,7 @@ document.addEventListener('click', function onFirstClick() {
   document.removeEventListener('click', onFirstClick);
 }, { once: true });
 </script><tw-tag name="Audio" color="orange"></tw-tag><tw-tag name="footer" color="orange"></tw-tag><tw-tag name="startup" color="orange"></tw-tag><tw-passagedata pid="1" name="Intro" tags="" position="250,250" size="100,100">(set: $hasrock to false)
-(set: $haStick to false)
+(set: $hasStick to false)
 &lt;img src=&quot;images/1.png&quot; width=&quot;300&quot; height=&quot;400&quot; alt=&quot;Descripción&quot; class=&quot;flotante&quot;/&gt;
 Little Red Riding Hood is on her way to her grandmother&#39;s house. Her mother has warned her to stay on the path and not talk to strangers.   As she walks through the woods, she comes to a fork in the path. What should she do?
 [[Stay on the main path, which is long and safe]]
@@ -201,7 +201,7 @@ What should Little Red Riding Hood do?
 [[She stays on the path and keeps walking to her grandmother&#39;s house.|Arrive at Grandmother&#39;s House.]] </tw-passagedata><tw-passagedata pid="4" name="Continue on the path to her grandmother&#39;s house." tags="" position="375,500" size="100,100">[[Arrive at Grandmother&#39;s House.]]</tw-passagedata><tw-passagedata pid="5" name="Arrive at Grandmother&#39;s House." tags="" position="275,625" size="100,100">&lt;img src=&quot;images/7.png&quot; width=&quot;300&quot; height=&quot;400&quot; alt=&quot;Descripción&quot; class=&quot;flotante&quot;/&gt;
 Little Red Riding Hood finally arrived at her grandmother&#39;s house. The door was open. &quot;Grandmother?&quot; she called. There was no answer. She went inside and saw her grandmother in bed, wearing a nightcap.
 
-[[Close the door]]</tw-passagedata><tw-passagedata pid="6" name="Pick up the stick." tags="" position="525,475" size="100,100">(set: $hasstick to true)
+[[Close the door]]</tw-passagedata><tw-passagedata pid="6" name="Pick up the stick." tags="" position="525,475" size="100,100">(set: $hasStick to true)
 The Little Red Riding Hood found a stick on the ground. She decided to pick it up, thinking it might be useful.
 &lt;img src=&quot;images/stick.png&quot; width=&quot;300&quot; height=&quot;400&quot; class=&quot;flotante&quot;&gt;
 [[She goes to pick the flowers for her grandmother.]] 
@@ -249,7 +249,7 @@ Grandma moves a little bit the sheet showing her eyes.
 [[Grandmother, what big teeth you have!]]
 [[Do not say anything.]]</tw-passagedata><tw-passagedata pid="17" name="Grandmother, what big teeth you have!" tags="" position="400,1125" size="100,100">&quot;All the better to EAT you with!&quot; the wolf roared. He jumped out of the bed, a big, hungry smile on his face. Little Red Riding Hood screamed and ran out of the house.
 &lt;img src=&quot;images/ChatGPT Image 15 ago 2025, 08_28_16 p.m..png&quot; width=&quot;300&quot; height=&quot;400&quot; alt=&quot;Descripción&quot; class=&quot;flotante&quot;/&gt;
-(if: $hasStick is true)[
+(if: $hasStick)[
   [[Swing the stick at the wolf]]
 ](else-if: $hasrock is true)[
   [[Throw the stone to the wolf]]
