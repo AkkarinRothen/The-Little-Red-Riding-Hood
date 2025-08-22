@@ -275,7 +275,11 @@ Grandma moves a little bit the sheet showing her eyes.
 (display: "inventory")</tw-passagedata><tw-passagedata pid="24" name="Chasing the wolf away" tags="" position="275,1500" size="100,100">When he enters, the big bad wolf was jumpin over the the little red riding hood. He quickly pulled out his axe and chased the wolf away. The wolf ran into the forest and was never seen again.
 &lt;img src=&quot;images/chasing the wolf away.png&quot; width=&quot;300&quot; height=&quot;400&quot; alt=&quot;Descripción&quot; class=&quot;flotante&quot;/&gt;
 
-[[Where is grandma??]] (display: "inventory")</tw-passagedata><tw-passagedata pid="25" name="startup" tags="" position="100,175" size="100,100">&lt;img src=&quot;https://www.science.org/do/10.1126/article.23922/full/sn-redridinghood-1644923258497.jpg&quot; width=&quot;300&quot; height=&quot;400&quot; alt=&quot;Descripción&quot; class=&quot;flotante&quot;/&gt;
+[[Where is grandma??]] (display: "inventory")</tw-passagedata><tw-passagedata pid="25" name="startup" tags="" position="100,175" size="100,100">
+(storymenu: "Reiniciar", (restart:))
+(storymenu: "Guardar partida", (save-game: "slot1"))
+(storymenu: "Cargar partida", (load-game: "slot1"))
+&lt;img src=&quot;https://www.science.org/do/10.1126/article.23922/full/sn-redridinghood-1644923258497.jpg&quot; width=&quot;300&quot; height=&quot;400&quot; alt=&quot;Descripción&quot; class=&quot;flotante&quot;/&gt;
 (link: &quot;Beginning&quot;)[
   (track: &#39;theme&#39;, &#39;loop&#39;, true)
   (track: &#39;theme&#39;, &#39;play&#39;)
